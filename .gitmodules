@@ -1,0 +1,6 @@
+[submodule "index-tts"]
+	path = index-tts
+	url = https://github.com/index-tts/index-tts.git
+[submodule "DDSP-SVC"]
+	path = DDSP-SVC
+	url = https://github.com/yxlllc/DDSP-SVC.git
