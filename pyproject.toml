@@ -1,0 +1,74 @@
+[project]
+name = "creatyourvoice"
+version = "0.1.0"
+description = "Create Your Voice - A project combining DDSP-SVC and Index-TTS for voice conversion and synthesis"
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # DDSP-SVC dependencies from DDSP-SVC/requirements.txt
+    "einops",
+    "fairseq == 0.10.0",
+    "flask",
+    "flask_cors",
+    "gin",
+    "gin_config",
+    "librosa",
+    "local_attention",
+    "matplotlib",
+    # Using numpy version compatible with index-tts
+    "numpy==1.26.2",
+    "praat-parselmouth",
+    "pyworld",
+    "PyYAML",
+    "resampy",
+    "scikit_learn",
+    "scipy",
+    "SoundFile",
+    "tensorboard",
+    "torchcrepe",
+    "torchfcpe",
+    "tqdm",
+    "transformers",
+    # "wave",
+    "FreeSimpleGUI",
+    "sounddevice",
+    "gradio",
+    # Index-TTS dependencies from index-tts/pyproject.toml
+    "indextts @ file:///${PROJECT_ROOT}/index-tts",
+]
+
+[project.optional-dependencies]
+# Optional dependencies for development
+dev = [
+    "ruff>=0.8.0",
+    "mypy>=1.10.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+# Configuration for uv package manager
+dev-dependencies = [
+    "ruff>=0.8.0",
+    "mypy>=1.10.0",
+]
+
+# Use pre-compiled wheels for llvmlite to avoid build issues
+[tool.uv.sources]
+llvmlite = [
+    { url = "https://files.pythonhosted.org/packages/14/fe/d3a9c921a2adad2e9f24693754983f290e0dac9410666e802b9dba4d0218/llvmlite-0.41.1-cp311-cp311-win_amd64.whl" }
+]
+
+[tool.ruff]
+# Ruff configuration
+line-length = 88
+target-version = "py310"
+
+[tool.mypy]
+# Mypy configuration
+python_version = "3.10"
+strict = true
