@@ -37,6 +37,7 @@ dependencies = [
     "gradio",
     # Index-TTS dependencies from index-tts/pyproject.toml
     "indextts @ file:///${PROJECT_ROOT}/index-tts",
+    "huggingface_hub[cli]",
 ]
 
 [project.optional-dependencies]
