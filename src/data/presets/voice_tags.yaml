@@ -1,0 +1,240 @@
+# 音色标签预设配置
+# 每个标签对应一段包含足够音高音素特征的音频文件和说话人列表
+
+voice_tags:
+  童男:
+    description: "童男音色，音调较高，声音清脆"
+    audio_file: "samples/child_male.wav"
+    f0_range: [200, 500]
+    speakers:
+      - id: "child_male_01"
+        name: "童男1号"
+        weight: 1.0
+      - id: "child_male_02"
+        name: "童男2号"
+        weight: 0.8
+      - id: "child_male_03"
+        name: "童男3号"
+        weight: 0.6
+    default_ddsp_params:
+      f0_min: 200.0
+      f0_max: 500.0
+      threhold: -50.0
+      f0_predictor: "rmvpe"
+
+  童女:
+    description: "童女音色，音调高亮，声音甜美"
+    audio_file: "samples/child_female.wav"
+    f0_range: [220, 550]
+    speakers:
+      - id: "child_female_01"
+        name: "童女1号"
+        weight: 1.0
+      - id: "child_female_02"
+        name: "童女2号"
+        weight: 0.9
+      - id: "child_female_03"
+        name: "童女3号"
+        weight: 0.7
+    default_ddsp_params:
+      f0_min: 220.0
+      f0_max: 550.0
+      threhold: -50.0
+      f0_predictor: "rmvpe"
+
+  少男:
+    description: "少男音色，正在变声期，音调中等"
+    audio_file: "samples/teen_male.wav"
+    f0_range: [120, 350]
+    speakers:
+      - id: "teen_male_01"
+        name: "少男1号"
+        weight: 1.0
+      - id: "teen_male_02"
+        name: "少男2号"
+        weight: 0.8
+      - id: "teen_male_03"
+        name: "少男3号"
+        weight: 0.6
+    default_ddsp_params:
+      f0_min: 120.0
+      f0_max: 350.0
+      threhold: -55.0
+      f0_predictor: "rmvpe"
+
+  少女:
+    description: "少女音色，清澈明亮，带有青春活力"
+    audio_file: "samples/teen_female.wav"
+    f0_range: [180, 450]
+    speakers:
+      - id: "teen_female_01"
+        name: "少女1号"
+        weight: 1.0
+      - id: "teen_female_02"
+        name: "少女2号"
+        weight: 0.9
+      - id: "teen_female_03"
+        name: "少女3号"
+        weight: 0.8
+    default_ddsp_params:
+      f0_min: 180.0
+      f0_max: 450.0
+      threhold: -55.0
+      f0_predictor: "rmvpe"
+
+  青年男:
+    description: "青年男性音色，成熟稳重"
+    audio_file: "samples/young_male.wav"
+    f0_range: [80, 250]
+    speakers:
+      - id: "young_male_01"
+        name: "青年男1号"
+        weight: 1.0
+      - id: "young_male_02"
+        name: "青年男2号"
+        weight: 0.9
+      - id: "young_male_03"
+        name: "青年男3号"
+        weight: 0.8
+      - id: "young_male_04"
+        name: "青年男4号"
+        weight: 0.7
+    default_ddsp_params:
+      f0_min: 80.0
+      f0_max: 250.0
+      threhold: -60.0
+      f0_predictor: "rmvpe"
+
+  青年女:
+    description: "青年女性音色，温柔知性"
+    audio_file: "samples/young_female.wav"
+    f0_range: [150, 400]
+    speakers:
+      - id: "young_female_01"
+        name: "青年女1号"
+        weight: 1.0
+      - id: "young_female_02"
+        name: "青年女2号"
+        weight: 0.9
+      - id: "young_female_03"
+        name: "青年女3号"
+        weight: 0.8
+      - id: "young_female_04"
+        name: "青年女4号"
+        weight: 0.7
+    default_ddsp_params:
+      f0_min: 150.0
+      f0_max: 400.0
+      threhold: -60.0
+      f0_predictor: "rmvpe"
+
+  中年男:
+    description: "中年男性音色，沉稳有力"
+    audio_file: "samples/middle_male.wav"
+    f0_range: [70, 220]
+    speakers:
+      - id: "middle_male_01"
+        name: "中年男1号"
+        weight: 1.0
+      - id: "middle_male_02"
+        name: "中年男2号"
+        weight: 0.9
+      - id: "middle_male_03"
+        name: "中年男3号"
+        weight: 0.8
+    default_ddsp_params:
+      f0_min: 70.0
+      f0_max: 220.0
+      threhold: -60.0
+      f0_predictor: "rmvpe"
+
+  中年女:
+    description: "中年女性音色，成熟优雅"
+    audio_file: "samples/middle_female.wav"
+    f0_range: [130, 350]
+    speakers:
+      - id: "middle_female_01"
+        name: "中年女1号"
+        weight: 1.0
+      - id: "middle_female_02"
+        name: "中年女2号"
+        weight: 0.9
+      - id: "middle_female_03"
+        name: "中年女3号"
+        weight: 0.8
+    default_ddsp_params:
+      f0_min: 130.0
+      f0_max: 350.0
+      threhold: -60.0
+      f0_predictor: "rmvpe"
+
+  老年男:
+    description: "老年男性音色，苍老沧桑"
+    audio_file: "samples/elder_male.wav"
+    f0_range: [60, 200]
+    speakers:
+      - id: "elder_male_01"
+        name: "老年男1号"
+        weight: 1.0
+      - id: "elder_male_02"
+        name: "老年男2号"
+        weight: 0.8
+    default_ddsp_params:
+      f0_min: 60.0
+      f0_max: 200.0
+      threhold: -65.0
+      f0_predictor: "rmvpe"
+
+  老年女:
+    description: "老年女性音色，慈祥温和"
+    audio_file: "samples/elder_female.wav"
+    f0_range: [120, 300]
+    speakers:
+      - id: "elder_female_01"
+        name: "老年女1号"
+        weight: 1.0
+      - id: "elder_female_02"
+        name: "老年女2号"
+        weight: 0.8
+    default_ddsp_params:
+      f0_min: 120.0
+      f0_max: 300.0
+      threhold: -65.0
+      f0_predictor: "rmvpe"
+
+# 特殊音色标签
+special_tags:
+  机器人:
+    description: "机械化音色，带有电子感"
+    audio_file: "samples/robot.wav"
+    f0_range: [100, 300]
+    speakers:
+      - id: "robot_01"
+        name: "机器人1号"
+        weight: 1.0
+    default_ddsp_params:
+      f0_min: 100.0
+      f0_max: 300.0
+      threhold: -50.0
+      f0_predictor: "rmvpe"
+
+  动物:
+    description: "动物拟人化音色"
+    audio_file: "samples/animal.wav"
+    f0_range: [150, 500]
+    speakers:
+      - id: "animal_01"
+        name: "动物1号"
+        weight: 1.0
+    default_ddsp_params:
+      f0_min: 150.0
+      f0_max: 500.0
+      threhold: -55.0
+      f0_predictor: "rmvpe"
+
+# 默认测试文本
+test_texts:
+  - "你好，我是一个新的音色角色。"
+  - "今天天气真不错，适合出去走走。"
+  - "音色测试，包含各种音素和语调变化。"
+  - "这是一段用于测试音色效果的示例文本。"

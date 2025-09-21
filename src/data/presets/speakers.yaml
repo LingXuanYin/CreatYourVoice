@@ -1,0 +1,306 @@
+# 说话人配置文件
+# 定义各个音色标签对应的DDSP-SVC说话人模型
+
+speakers:
+  # 童男说话人
+  child_male_01:
+    name: "童男1号"
+    model_path: "models/ddsp_svc/child_male_01.pth"
+    config_path: "models/ddsp_svc/child_male_01.yaml"
+    speaker_id: 0
+    description: "活泼可爱的小男孩音色"
+    tags: ["童男", "活泼", "可爱"]
+
+  child_male_02:
+    name: "童男2号"
+    model_path: "models/ddsp_svc/child_male_02.pth"
+    config_path: "models/ddsp_svc/child_male_02.yaml"
+    speaker_id: 0
+    description: "调皮淘气的小男孩音色"
+    tags: ["童男", "调皮", "淘气"]
+
+  child_male_03:
+    name: "童男3号"
+    model_path: "models/ddsp_svc/child_male_03.pth"
+    config_path: "models/ddsp_svc/child_male_03.yaml"
+    speaker_id: 0
+    description: "乖巧听话的小男孩音色"
+    tags: ["童男", "乖巧", "听话"]
+
+  # 童女说话人
+  child_female_01:
+    name: "童女1号"
+    model_path: "models/ddsp_svc/child_female_01.pth"
+    config_path: "models/ddsp_svc/child_female_01.yaml"
+    speaker_id: 0
+    description: "甜美可爱的小女孩音色"
+    tags: ["童女", "甜美", "可爱"]
+
+  child_female_02:
+    name: "童女2号"
+    model_path: "models/ddsp_svc/child_female_02.pth"
+    config_path: "models/ddsp_svc/child_female_02.yaml"
+    speaker_id: 0
+    description: "活泼开朗的小女孩音色"
+    tags: ["童女", "活泼", "开朗"]
+
+  child_female_03:
+    name: "童女3号"
+    model_path: "models/ddsp_svc/child_female_03.pth"
+    config_path: "models/ddsp_svc/child_female_03.yaml"
+    speaker_id: 0
+    description: "温柔安静的小女孩音色"
+    tags: ["童女", "温柔", "安静"]
+
+  # 少男说话人
+  teen_male_01:
+    name: "少男1号"
+    model_path: "models/ddsp_svc/teen_male_01.pth"
+    config_path: "models/ddsp_svc/teen_male_01.yaml"
+    speaker_id: 0
+    description: "青春阳光的少年音色"
+    tags: ["少男", "青春", "阳光"]
+
+  teen_male_02:
+    name: "少男2号"
+    model_path: "models/ddsp_svc/teen_male_02.pth"
+    config_path: "models/ddsp_svc/teen_male_02.yaml"
+    speaker_id: 0
+    description: "内向文静的少年音色"
+    tags: ["少男", "内向", "文静"]
+
+  teen_male_03:
+    name: "少男3号"
+    model_path: "models/ddsp_svc/teen_male_03.pth"
+    config_path: "models/ddsp_svc/teen_male_03.yaml"
+    speaker_id: 0
+    description: "热情外向的少年音色"
+    tags: ["少男", "热情", "外向"]
+
+  # 少女说话人
+  teen_female_01:
+    name: "少女1号"
+    model_path: "models/ddsp_svc/teen_female_01.pth"
+    config_path: "models/ddsp_svc/teen_female_01.yaml"
+    speaker_id: 0
+    description: "清纯可爱的少女音色"
+    tags: ["少女", "清纯", "可爱"]
+
+  teen_female_02:
+    name: "少女2号"
+    model_path: "models/ddsp_svc/teen_female_02.pth"
+    config_path: "models/ddsp_svc/teen_female_02.yaml"
+    speaker_id: 0
+    description: "活泼开朗的少女音色"
+    tags: ["少女", "活泼", "开朗"]
+
+  teen_female_03:
+    name: "少女3号"
+    model_path: "models/ddsp_svc/teen_female_03.pth"
+    config_path: "models/ddsp_svc/teen_female_03.yaml"
+    speaker_id: 0
+    description: "温柔体贴的少女音色"
+    tags: ["少女", "温柔", "体贴"]
+
+  # 青年男说话人
+  young_male_01:
+    name: "青年男1号"
+    model_path: "models/ddsp_svc/young_male_01.pth"
+    config_path: "models/ddsp_svc/young_male_01.yaml"
+    speaker_id: 0
+    description: "成熟稳重的青年男性音色"
+    tags: ["青年男", "成熟", "稳重"]
+
+  young_male_02:
+    name: "青年男2号"
+    model_path: "models/ddsp_svc/young_male_02.pth"
+    config_path: "models/ddsp_svc/young_male_02.yaml"
+    speaker_id: 0
+    description: "温和亲切的青年男性音色"
+    tags: ["青年男", "温和", "亲切"]
+
+  young_male_03:
+    name: "青年男3号"
+    model_path: "models/ddsp_svc/young_male_03.pth"
+    config_path: "models/ddsp_svc/young_male_03.yaml"
+    speaker_id: 0
+    description: "自信阳光的青年男性音色"
+    tags: ["青年男", "自信", "阳光"]
+
+  young_male_04:
+    name: "青年男4号"
+    model_path: "models/ddsp_svc/young_male_04.pth"
+    config_path: "models/ddsp_svc/young_male_04.yaml"
+    speaker_id: 0
+    description: "深沉内敛的青年男性音色"
+    tags: ["青年男", "深沉", "内敛"]
+
+  # 青年女说话人
+  young_female_01:
+    name: "青年女1号"
+    model_path: "models/ddsp_svc/young_female_01.pth"
+    config_path: "models/ddsp_svc/young_female_01.yaml"
+    speaker_id: 0
+    description: "温柔知性的青年女性音色"
+    tags: ["青年女", "温柔", "知性"]
+
+  young_female_02:
+    name: "青年女2号"
+    model_path: "models/ddsp_svc/young_female_02.pth"
+    config_path: "models/ddsp_svc/young_female_02.yaml"
+    speaker_id: 0
+    description: "活泼开朗的青年女性音色"
+    tags: ["青年女", "活泼", "开朗"]
+
+  young_female_03:
+    name: "青年女3号"
+    model_path: "models/ddsp_svc/young_female_03.pth"
+    config_path: "models/ddsp_svc/young_female_03.yaml"
+    speaker_id: 0
+    description: "优雅大方的青年女性音色"
+    tags: ["青年女", "优雅", "大方"]
+
+  young_female_04:
+    name: "青年女4号"
+    model_path: "models/ddsp_svc/young_female_04.pth"
+    config_path: "models/ddsp_svc/young_female_04.yaml"
+    speaker_id: 0
+    description: "干练专业的青年女性音色"
+    tags: ["青年女", "干练", "专业"]
+
+  # 中年男说话人
+  middle_male_01:
+    name: "中年男1号"
+    model_path: "models/ddsp_svc/middle_male_01.pth"
+    config_path: "models/ddsp_svc/middle_male_01.yaml"
+    speaker_id: 0
+    description: "沉稳有力的中年男性音色"
+    tags: ["中年男", "沉稳", "有力"]
+
+  middle_male_02:
+    name: "中年男2号"
+    model_path: "models/ddsp_svc/middle_male_02.pth"
+    config_path: "models/ddsp_svc/middle_male_02.yaml"
+    speaker_id: 0
+    description: "温和慈祥的中年男性音色"
+    tags: ["中年男", "温和", "慈祥"]
+
+  middle_male_03:
+    name: "中年男3号"
+    model_path: "models/ddsp_svc/middle_male_03.pth"
+    config_path: "models/ddsp_svc/middle_male_03.yaml"
+    speaker_id: 0
+    description: "威严庄重的中年男性音色"
+    tags: ["中年男", "威严", "庄重"]
+
+  # 中年女说话人
+  middle_female_01:
+    name: "中年女1号"
+    model_path: "models/ddsp_svc/middle_female_01.pth"
+    config_path: "models/ddsp_svc/middle_female_01.yaml"
+    speaker_id: 0
+    description: "成熟优雅的中年女性音色"
+    tags: ["中年女", "成熟", "优雅"]
+
+  middle_female_02:
+    name: "中年女2号"
+    model_path: "models/ddsp_svc/middle_female_02.pth"
+    config_path: "models/ddsp_svc/middle_female_02.yaml"
+    speaker_id: 0
+    description: "温柔慈爱的中年女性音色"
+    tags: ["中年女", "温柔", "慈爱"]
+
+  middle_female_03:
+    name: "中年女3号"
+    model_path: "models/ddsp_svc/middle_female_03.pth"
+    config_path: "models/ddsp_svc/middle_female_03.yaml"
+    speaker_id: 0
+    description: "知性干练的中年女性音色"
+    tags: ["中年女", "知性", "干练"]
+
+  # 老年男说话人
+  elder_male_01:
+    name: "老年男1号"
+    model_path: "models/ddsp_svc/elder_male_01.pth"
+    config_path: "models/ddsp_svc/elder_male_01.yaml"
+    speaker_id: 0
+    description: "苍老沧桑的老年男性音色"
+    tags: ["老年男", "苍老", "沧桑"]
+
+  elder_male_02:
+    name: "老年男2号"
+    model_path: "models/ddsp_svc/elder_male_02.pth"
+    config_path: "models/ddsp_svc/elder_male_02.yaml"
+    speaker_id: 0
+    description: "慈祥和蔼的老年男性音色"
+    tags: ["老年男", "慈祥", "和蔼"]
+
+  # 老年女说话人
+  elder_female_01:
+    name: "老年女1号"
+    model_path: "models/ddsp_svc/elder_female_01.pth"
+    config_path: "models/ddsp_svc/elder_female_01.yaml"
+    speaker_id: 0
+    description: "慈祥温和的老年女性音色"
+    tags: ["老年女", "慈祥", "温和"]
+
+  elder_female_02:
+    name: "老年女2号"
+    model_path: "models/ddsp_svc/elder_female_02.pth"
+    config_path: "models/ddsp_svc/elder_female_02.yaml"
+    speaker_id: 0
+    description: "智慧睿智的老年女性音色"
+    tags: ["老年女", "智慧", "睿智"]
+
+  # 特殊音色说话人
+  robot_01:
+    name: "机器人1号"
+    model_path: "models/ddsp_svc/robot_01.pth"
+    config_path: "models/ddsp_svc/robot_01.yaml"
+    speaker_id: 0
+    description: "机械化电子音色"
+    tags: ["机器人", "机械", "电子"]
+
+  animal_01:
+    name: "动物1号"
+    model_path: "models/ddsp_svc/animal_01.pth"
+    config_path: "models/ddsp_svc/animal_01.yaml"
+    speaker_id: 0
+    description: "动物拟人化音色"
+    tags: ["动物", "拟人", "可爱"]
+
+# 说话人组合预设
+speaker_combinations:
+  # 童声组合
+  child_mix:
+    name: "童声混合"
+    speakers:
+      - id: "child_male_01"
+        weight: 0.3
+      - id: "child_female_01"
+        weight: 0.4
+      - id: "child_male_02"
+        weight: 0.3
+    description: "童男童女混合音色"
+
+  # 青年组合
+  young_mix:
+    name: "青年混合"
+    speakers:
+      - id: "young_male_01"
+        weight: 0.5
+      - id: "young_female_01"
+        weight: 0.5
+    description: "青年男女混合音色"
+
+  # 成熟组合
+  mature_mix:
+    name: "成熟混合"
+    speakers:
+      - id: "middle_male_01"
+        weight: 0.4
+      - id: "middle_female_01"
+        weight: 0.4
+      - id: "young_male_01"
+        weight: 0.2
+    description: "成熟稳重混合音色"

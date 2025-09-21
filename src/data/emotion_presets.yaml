@@ -1,0 +1,165 @@
+# 情感预设配置文件
+# IndexTTS v2 8维情感向量预设
+# 向量格式: [happy, angry, sad, afraid, disgusted, melancholic, surprised, calm]
+
+presets:
+  # 基础情感预设
+  - name: "开心"
+    description: "快乐、愉悦的情感状态"
+    emotion_vector: [0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1]
+    tags: ["基础", "积极", "日常"]
+
+  - name: "愤怒"
+    description: "生气、愤慨的情感状态"
+    emotion_vector: [0.0, 0.9, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0]
+    tags: ["基础", "消极", "强烈"]
+
+  - name: "悲伤"
+    description: "难过、伤心的情感状态"
+    emotion_vector: [0.0, 0.0, 0.8, 0.0, 0.0, 0.2, 0.0, 0.0]
+    tags: ["基础", "消极", "低沉"]
+
+  - name: "恐惧"
+    description: "害怕、紧张的情感状态"
+    emotion_vector: [0.0, 0.0, 0.1, 0.8, 0.0, 0.0, 0.1, 0.0]
+    tags: ["基础", "消极", "紧张"]
+
+  - name: "厌恶"
+    description: "反感、讨厌的情感状态"
+    emotion_vector: [0.0, 0.2, 0.0, 0.0, 0.8, 0.0, 0.0, 0.0]
+    tags: ["基础", "消极", "排斥"]
+
+  - name: "忧郁"
+    description: "低落、沮丧的情感状态"
+    emotion_vector: [0.0, 0.0, 0.3, 0.0, 0.0, 0.7, 0.0, 0.0]
+    tags: ["基础", "消极", "低沉"]
+
+  - name: "惊讶"
+    description: "意外、震惊的情感状态"
+    emotion_vector: [0.1, 0.0, 0.0, 0.1, 0.0, 0.0, 0.8, 0.0]
+    tags: ["基础", "中性", "突然"]
+
+  - name: "平静"
+    description: "冷静、安详的情感状态"
+    emotion_vector: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+    tags: ["基础", "中性", "稳定"]
+
+  # 复合情感预设
+  - name: "兴奋"
+    description: "激动、充满活力的状态"
+    emotion_vector: [0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.1]
+    tags: ["复合", "积极", "活跃"]
+
+  - name: "焦虑"
+    description: "担心、不安的状态"
+    emotion_vector: [0.0, 0.1, 0.2, 0.5, 0.0, 0.2, 0.0, 0.0]
+    tags: ["复合", "消极", "紧张"]
+
+  - name: "温柔"
+    description: "温和、柔软的情感"
+    emotion_vector: [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7]
+    tags: ["复合", "积极", "温和"]
+
+  - name: "严肃"
+    description: "庄重、认真的状态"
+    emotion_vector: [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.8]
+    tags: ["复合", "中性", "正式"]
+
+  - name: "无奈"
+    description: "无可奈何、叹息的状态"
+    emotion_vector: [0.0, 0.0, 0.4, 0.0, 0.1, 0.4, 0.0, 0.1]
+    tags: ["复合", "消极", "被动"]
+
+  - name: "疑惑"
+    description: "困惑、不解的状态"
+    emotion_vector: [0.0, 0.0, 0.0, 0.2, 0.0, 0.1, 0.4, 0.3]
+    tags: ["复合", "中性", "思考"]
+
+  # 场景化情感预设
+  - name: "播报新闻"
+    description: "新闻播报的专业语调"
+    emotion_vector: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.9]
+    tags: ["场景", "专业", "正式"]
+
+  - name: "讲故事"
+    description: "生动有趣的故事讲述"
+    emotion_vector: [0.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.4]
+    tags: ["场景", "生动", "娱乐"]
+
+  - name: "安慰他人"
+    description: "温暖安慰的语调"
+    emotion_vector: [0.2, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.7]
+    tags: ["场景", "温暖", "关怀"]
+
+  - name: "激励演讲"
+    description: "鼓舞人心的演讲语调"
+    emotion_vector: [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.3]
+    tags: ["场景", "激励", "正能量"]
+
+  - name: "悬疑朗读"
+    description: "神秘紧张的悬疑氛围"
+    emotion_vector: [0.0, 0.1, 0.1, 0.4, 0.0, 0.2, 0.2, 0.0]
+    tags: ["场景", "悬疑", "紧张"]
+
+  - name: "浪漫表白"
+    description: "深情浪漫的表达"
+    emotion_vector: [0.6, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.3]
+    tags: ["场景", "浪漫", "深情"]
+
+  # 年龄特征情感预设
+  - name: "童真活泼"
+    description: "儿童般天真活泼的语调"
+    emotion_vector: [0.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1]
+    tags: ["年龄", "童真", "活泼"]
+
+  - name: "青春阳光"
+    description: "青少年阳光向上的语调"
+    emotion_vector: [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.4]
+    tags: ["年龄", "青春", "阳光"]
+
+  - name: "成熟稳重"
+    description: "成年人成熟稳重的语调"
+    emotion_vector: [0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9]
+    tags: ["年龄", "成熟", "稳重"]
+
+  - name: "慈祥长者"
+    description: "长者慈祥温和的语调"
+    emotion_vector: [0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8]
+    tags: ["年龄", "慈祥", "温和"]
+
+  # 特殊用途预设
+  - name: "机器人"
+    description: "机械化、无情感的语调"
+    emotion_vector: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+    tags: ["特殊", "机械", "无情感"]
+
+  - name: "魅惑"
+    description: "诱惑、魅惑的语调"
+    emotion_vector: [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.6]
+    tags: ["特殊", "魅惑", "诱惑"]
+
+  - name: "威严"
+    description: "威严、权威的语调"
+    emotion_vector: [0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7]
+    tags: ["特殊", "威严", "权威"]
+
+  - name: "神秘"
+    description: "神秘、深邃的语调"
+    emotion_vector: [0.0, 0.0, 0.1, 0.2, 0.0, 0.3, 0.1, 0.3]
+    tags: ["特殊", "神秘", "深邃"]
+
+  # 动态情感预设（情感变化）
+  - name: "由悲转喜"
+    description: "从悲伤逐渐转向快乐"
+    emotion_vector: [0.4, 0.0, 0.3, 0.0, 0.0, 0.1, 0.1, 0.1]
+    tags: ["动态", "转换", "情感变化"]
+
+  - name: "由怒转静"
+    description: "从愤怒逐渐平静下来"
+    emotion_vector: [0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7]
+    tags: ["动态", "转换", "情感变化"]
+
+  - name: "渐入佳境"
+    description: "情绪逐渐高涨"
+    emotion_vector: [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2]
+    tags: ["动态", "渐进", "情感变化"]

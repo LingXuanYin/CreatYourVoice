@@ -1,0 +1,54 @@
+audio:
+  default_sample_rate: 22050
+  max_file_size_mb: 100.0
+  normalize_audio: true
+  silence_threshold_db: -40.0
+  supported_formats:
+  - wav
+  - mp3
+  - flac
+  - ogg
+  trim_silence: true
+created_at: '2025-09-22T02:44:06.257687'
+ddsp_svc:
+  cache_dir: DDSP-SVC/cache
+  default_f0_max: 1100.0
+  default_f0_min: 50.0
+  default_f0_predictor: rmvpe
+  default_threshold: -60.0
+  max_audio_length: 30.0
+  model_dir: DDSP-SVC/exp
+gpu:
+  auto_cleanup_enabled: true
+  cleanup_threshold_percent: 85.0
+  idle_timeout_minutes: 30
+  max_memory_usage_percent: 90.0
+  memory_monitoring_enabled: true
+  memory_monitoring_interval: 2.0
+index_tts:
+  config_file: config.yaml
+  default_emotion_weight: 0.65
+  default_max_tokens_per_segment: 120
+  max_text_length: 500
+  model_dir: index-tts/checkpoints
+  use_cuda_kernel: false
+  use_deepspeed: false
+  use_fp16: false
+system:
+  cache_dir: cache
+  device: auto
+  log_file: logs/app.log
+  log_level: INFO
+  outputs_dir: outputs
+  temp_dir: temp
+  voices_dir: voices
+ui:
+  debug: false
+  host: 0.0.0.0
+  language: zh_CN
+  max_concurrent_users: 10
+  port: 7860
+  share: false
+  theme: default
+updated_at: '2025-09-22T02:44:06.257687'
+version: 1.0.0
